@@ -13,15 +13,13 @@ head
   link(href='https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700' rel='stylesheet')
   // CSS Reset : BEGIN
   style.
-    /* What it does: Remove spaces around the email design added by some email clients. */
-    /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
     html,
     body {
     margin: 0 auto !important;
     padding: 0 !important;
     height: 100% !important;
     width: 100% !important;
-    background: #f1f1f1;
+    background: #F0E68C;
     }
     /* What it does: Stops email clients resizing small text. */
     * {
@@ -103,13 +101,13 @@ head
   // Progressive Enhancements : BEGIN
   style.
     .primary{
-    background: #17bebb;
+    background: #2f89fc;
     }
     .bg_white{
     background: #ffffff;
     }
     .bg_light{
-    background: #f7fafa;
+    background: #fafafa;
     }
     .bg_black{
     background: #000000;
@@ -122,12 +120,12 @@ head
     }
     /*BUTTON*/
     .btn{
-    padding: 10px 15px;
+    padding: 5px 15px;
     display: inline-block;
     }
     .btn.btn-primary{
     border-radius: 5px;
-    background: #17bebb;
+    background: #2f89fc;
     color: #ffffff;
     }
     .btn.btn-white{
@@ -140,17 +138,6 @@ head
     background: transparent;
     border: 1px solid #fff;
     color: #fff;
-    }
-    .btn.btn-black-outline{
-    border-radius: 0px;
-    background: transparent;
-    border: 2px solid #000;
-    color: #000;
-    font-weight: 700;
-    }
-    .btn-custom{
-    color: rgba(0,0,0,.3);
-    text-decoration: underline;
     }
     h1,h2,h3,h4,h5,h6{
     font-family: 'Work Sans', sans-serif;
@@ -166,7 +153,7 @@ head
     color: rgba(0,0,0,.4);
     }
     a{
-    color: #17bebb;
+    color: #2f89fc;
     }
     table{
     }
@@ -175,10 +162,24 @@ head
     margin: 0;
     }
     .logo h1 a{
-    color: #17bebb;
-    font-size: 24px;
+    color: #000000;
+    font-size: 20px;
     font-weight: 700;
-    font-family: 'Work Sans', sans-serif;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    }
+    .navigation{
+    padding: 0;
+    }
+    .navigation li{
+    list-style: none;
+    display: inline-block;;
+    margin-left: 5px;
+    font-size: 13px;
+    font-weight: 500;
+    }
+    .navigation li a{
+    color: rgba(0,0,0,.4);
     }
     /*HERO*/
     .hero{
@@ -190,54 +191,79 @@ head
     }
     .hero .text h2{
     color: #000;
-    font-size: 34px;
-    margin-bottom: 15px;
+    font-size: 30px;
+    margin-bottom: 0;
     font-weight: 300;
-    line-height: 1.2;
-    }
-    .hero .text h3{
-    font-size: 24px;
-    font-weight: 200;
     }
     .hero .text h2 span{
     font-weight: 600;
-    color: #000;
+    color: #2f89fc;
     }
-    /*PRODUCT*/
-    .product-entry{
-    display: block;
+    /*HEADING SECTION*/
+    .heading-section{
+    }
+    .heading-section h2{
+    color: #000000;
+    font-size: 28px;
+    margin-top: 0;
+    line-height: 1.4;
+    font-weight: 400;
+    }
+    .heading-section .subheading{
+    margin-bottom: 20px !important;
+    display: inline-block;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(0,0,0,.4);
     position: relative;
-    float: left;
-    padding-top: 20px;
     }
-    .product-entry .text{
-    width: calc(100% - 125px);
-    padding-left: 20px;
+    .heading-section .subheading::after{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #2f89fc;
+    margin: 0 auto;
     }
-    .product-entry .text h3{
-    margin-bottom: 0;
+    .heading-section-white{
+    color: rgba(255,255,255,.8);
+    }
+    .heading-section-white h2{
+    font-family:
+    line-height: 1;
     padding-bottom: 0;
     }
-    .product-entry .text p{
-    margin-top: 0;
+    .heading-section-white h2{
+    color: #ffffff;
     }
-    .product-entry img, .product-entry .text{
-    float: left;
-    }
-    ul.social{
-    padding: 0;
-    }
-    ul.social li{
+    .heading-section-white .subheading{
+    margin-bottom: 0;
     display: inline-block;
-    margin-right: 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgba(255,255,255,.4);
+    }
+    /*PROJECT*/
+    .text-project{
+    padding-top: 10px;
+    }
+    .text-project h3{
+    margin-bottom: 0;
+    }
+    .text-project h3 a{
+    color: #000;
     }
     /*FOOTER*/
     .footer{
-    border-top: 1px solid rgba(0,0,0,.05);
-    color: rgba(0,0,0,.5);
+    color: rgba(255,255,255,.5);
     }
     .footer .heading{
-    color: #000;
+    color: #ffffff;
     font-size: 20px;
     }
     .footer ul{
@@ -249,7 +275,7 @@ head
     margin-bottom: 10px;
     }
     .footer ul li a{
-    color: rgba(0,0,0,1);
+    color: rgba(255,255,255,1);
     }
     @media screen and (max-width: 500px) {
     }
@@ -260,67 +286,44 @@ center(style='width: 100%; background-color: #f1f1f1;')
     // BEGIN BODY
     table(align='center' role='presentation' cellspacing='0' cellpadding='0' border='0' width='100%' style='margin: auto;')
       tr
-        td.bg_white(valign='top' style='padding: 1em 2.5em 0 2.5em;')
-          table(role='presentation' border='0' cellpadding='0' cellspacing='0' width='100%')
+        td.bg_white(valign='top' style='padding: 1em 2.5em;')
+          table(role='presentation' border='0' cellpadding='0' cellspacing='0' width='100%' margin-top='4rem')
             tr
-              td.logo(style='text-align: left;')
+              td.logo(style='text-align: center;')
                 h1
-                  a(href='#') Shop
+                  a(href='#') GLUMCI U ZAGVOZDU
       // end tr
       tr
-        td.hero.bg_white(valign='middle' style='padding: 2em 0 2em 0;')
-          table(role='presentation' border='0' cellpadding='0' cellspacing='0' width='100%')
+        td.hero.hero-2.bg_white(valign='middle' style='padding: 4em 0;')
+          table
             tr
-              td(style='padding: 0 2.5em; text-align: left;')
-                .text
-                  h2 Ronald your shopping cart misses you
-                  h3 Amazing deals, updates, interesting news right in your inbox
+              td
+                .text(style='padding: 0 3em; text-align: center;')
+                  h2 Zahvaljuljemo na Va&scaron;oj kupnji!
+                  h3 NARUDZBA BR. 1231231
       // end tr
       tr
-        table.bg_white(role='presentation' border='0' cellpadding='0' cellspacing='0' width='100%')
-          tr(style='border-bottom: 1px solid rgba(0,0,0,.05);')
-            th(width='80%' style='text-align:left; padding: 0 2.5em; color: #000; padding-bottom: 20px') Item
-            th(width='20%' style='text-align:right; padding: 0 2.5em; color: #000; padding-bottom: 20px') Price
-          tr(style='border-bottom: 1px solid rgba(0,0,0,.05);')
-            td(valign='middle' width='80%' style='text-align:left; padding: 0 2.5em;')
-              .product-entry
-                img(src='images/prod-1.jpg' alt='' style='width: 100px; max-width: 600px; height: auto; margin-bottom: 20px; display: block;')
-                .text
-                  h3 Analog Wrest Watch
-                  span Small
-                  p
-                    | A small river named Duden flows by their place and supplies it with the necessary regelialia.
-            td(valign='middle' width='20%' style='text-align:left; padding: 0 2.5em;')
-              span.price(style='color: #000; font-size: 20px;') $120
-          tr(style='border-bottom: 1px solid rgba(0,0,0,.05);')
-            td(valign='middle' width='80%' style='text-align:left; padding: 0 2.5em;')
-              .product-entry
-                img(src='images/prod-2.jpg' alt='' style='width: 100px; max-width: 600px; height: auto; margin-bottom: 20px; display: block;')
-                .text
-                  h3 Analog Wrest Watch
-                  span Small
-                  p
-                    | A small river named Duden flows by their place and supplies it with the necessary regelialia.
-            td(valign='middle' width='20%' style='text-align:left; padding: 0 2.5em;')
-              span.price(style='color: #000; font-size: 20px;') $120
-          tr
-            td(valign='middle' style='text-align:left; padding: 1em 2.5em;')
-              p
-                a.btn.btn-primary(href='#') Continur your order
-      // end tr
+        td.bg_white
+          table(role='presentation' cellspacing='0' cellpadding='0' border='0' width='100%')
+            tr
+              td.bg_white.email-section
+                .heading-section(style='text-align: center; padding: 0 30px;')
+                  h2 ISPORUKA
+                  p Procjenjeno vrijeme dostave 3 do 7 radnih dana.
+            // end: tr
+      // end:tr
       // 1 Column Text + Button : END
     table(align='center' role='presentation' cellspacing='0' cellpadding='0' border='0' width='100%' style='margin: auto;')
       tr
-        td.bg_light.footer.email-section(valign='middle')
+        td.bg_black.footer.email-section(valign='middle')
           table
             tr
               td(valign='top' width='33.333%' style='padding-top: 20px;')
                 table(role='presentation' cellspacing='0' cellpadding='0' border='0' width='100%')
                   tr
                     td(style='text-align: left; padding-right: 10px;')
-                      h3.heading About
-                      p
-                        | A small river named Duden flows by their place and supplies it with the necessary regelialia.
+                      h3.heading O NAMA
+                      p Kulturna udruga GLUMCI U ZAGVOZDU
               td(valign='top' width='33.333%' style='padding-top: 20px;')
                 table(role='presentation' cellspacing='0' cellpadding='0' border='0' width='100%')
                   tr
@@ -328,26 +331,37 @@ center(style='width: 100%; background-color: #f1f1f1;')
                       h3.heading Contact Info
                       ul
                         li
-                          span.text 203 Fake St. Mountain View, San Francisco, California, USA
+                          span.text TRG GLUMACA 1, Zagvozd, 21270
                         li
-                          span.text +2 392 3929 210
+                          span.text
+                            a(href='#') glumcizagvozd@gmail.com
               td(valign='top' width='33.333%' style='padding-top: 20px;')
                 table(role='presentation' cellspacing='0' cellpadding='0' border='0' width='100%')
                   tr
                     td(style='text-align: left; padding-left: 10px;')
-                      h3.heading Useful Links
+                      h3.heading Link
                       ul
                         li
                           a(href='#') Home
                         li
-                          a(href='#') Account
+                          a(href='#') About
                         li
-                          a(href='#') Wishlist
+                          a(href='#') Services
                         li
-                          a(href='#') Order
+                          a(href='#') Work
       // end: tr
       tr
-        td.bg_white(style='text-align: center;')
-          p
-            | No longer want to receive these email? You can 
-            a(href='#' style='color: rgba(0,0,0,.8);') Unsubscribe here
+        td.bg_black.footer.email-section(valign='middle')
+          table
+            tr
+              td(valign='top' width='33.333%')
+                table(role='presentation' cellspacing='0' cellpadding='0' border='0' width='100%')
+                  tr
+                    td(style='text-align: left; padding-right: 10px;')
+                      p &copy; 2020 Kulturna udruga &quot;Glumci u Zagvozdu&quot;
+              td(valign='top' width='33.333%')
+                table(role='presentation' cellspacing='0' cellpadding='0' border='0' width='100%')
+                  tr
+                    td(style='text-align: right; padding-left: 5px; padding-right: 5px;')
+                      p
+                        a(href='#' style='color: rgba(255,255,255,.4);') Unsubcribe

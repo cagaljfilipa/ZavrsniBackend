@@ -13,7 +13,7 @@ const getOrders = async (req, res, next) => {
     .then((result) => {
       const mailOptions = {
         from: 'glumcizagvozd@gmail.com',
-        to: 'marinodrazic12@gmail.com',
+        to: 'filipa.cagalj@gmail.com',
         subject: 'Potvrda narudžbe',
         html: result,
       };
