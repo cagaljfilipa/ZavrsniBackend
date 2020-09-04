@@ -10,6 +10,7 @@ let router = require('express').Router();
 
 // Import routes
 let orderRoutes = require('./routes/order-routes');
+let productRoutes = require('./routes/product-routes');
 let HttpError = require('./models/http-error');
 
 // Configure bodyparser to handle post requests
@@ -49,6 +50,7 @@ var port = process.env.PORT || 5000;
 
 // Use Api routes in the App
 app.use('/api/orders', orderRoutes);
+app.use('/api/products', productRoutes);
 
 app.use((req, res, next) => {
   const error = new HttpError('Could not find this route.', 404);
